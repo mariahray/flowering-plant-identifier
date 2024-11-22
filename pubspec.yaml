@@ -1,0 +1,361 @@
+name: newpa
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.4 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  camera: ^0.10.6
+  cupertino_icons: ^1.0.6
+  shared_preferences: ^2.0.13
+  permission_handler: ^11.3.1
+  image: ^3.0.1
+  flutter_tflite: ^1.0.1
+  sqflite: ^2.0.0+4
+  path_provider : ^2.0.11
+  path: ^1.8.0
+  audioplayers: ^6.1.0
+  image_picker: ^0.8.7+4
+  flutter_inset_box_shadow: ^1.0.8
+ 
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^3.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/1.png
+    - assets/images/2.png
+    - assets/images/3.png
+    - assets/images/4.png
+    - assets/images/5.png
+    - assets/images/6.png
+    - assets/images/7.png
+    - assets/database/Chrysanthemumflower_info.db
+    - assets/images/tff.png
+    - assets/images/Flor.png
+    - assets/images/Fleur.png
+    - assets/models/labels.txt
+    - assets/models/model_unquant.tflite
+    - assets/images/Abbey.png
+    - assets/images/Abbey Dark Purple.png
+    - assets/images/Abbey Yellow.png
+    - assets/images/Alamos Purple.png
+    - assets/images/Alamos Yellow.png
+    - assets/images/Anastasia Sunny.png
+    - assets/images/Anastasia White.png
+    - assets/images/Dante Dark.png
+    - assets/images/Dante Pink.png
+    - assets/images/Dante Purple.png
+    - assets/images/Dante Red.png
+    - assets/images/Dante Yellow.png
+    - assets/images/Deligreen.png
+    - assets/images/Fireball.png
+    - assets/images/Florange.png
+    - assets/images/Magnum Yellow.png
+    - assets/images/Midnightsun.png
+    - assets/images/Mulberry.png
+    - assets/images/Olive.png
+    - assets/images/Paladov Dark.png
+    - assets/images/Pip Salmon.png
+    - assets/images/Radost Yellow.png
+    - assets/images/Radost.png
+    - assets/images/Rossano Charlotte.png
+    - assets/images/Rossano Elizabeth.png
+    - assets/images/Rossano White.png
+    - assets/images/Zembla Brasil.png
+    - assets/images/Zembla Lime.png
+    - assets/images/Zembla Yellow.png
+    - assets/images/Zembla.png
+    - assets/images/menuflower.png
+    - assets/images/catbook.png
+    - assets/sounds/bgmusic.mp3
+    - assets/images/abbey_coverphoto.jpeg
+    - assets/images/abbey_darkpurple.jpg
+    - assets/images/abbey_yellow.jpg
+    - assets/images/alamos purple cv.jpg
+    - assets/images/alamos_yellow.jpg
+    - assets/images/anastasia_sunny.jpg
+    - assets/images/anastasia-white.jpg
+    - assets/images/dante-dark.jpg
+    - assets/images/dante-pink.jpg
+    - assets/images/dante_purple.jpg
+    - assets/images/dante_red.jpg
+    - assets/images/dante_yellow.jpg
+    - assets/images/deli-green.jpg
+    - assets/images/fireball_cvp.jpg
+    - assets/images/florange_cvp.jpg
+    - assets/images/magnum-yellow.jpg
+    - assets/images/midnightsun_cbvp.jpg
+    - assets/images/mulberry_cvp.jpg
+    - assets/images/olive_cvp.jpg
+    - assets/images/paladov-dark.jpg
+    - assets/images/pipsalmon_cvp.jpg
+    - assets/images/radost-white.jpg
+    - assets/images/radost-yellow.jpg
+    - assets/images/rossano-charlotte.jpg
+    - assets/images/rossano-elizabeth.jpg
+    - assets/images/rossano-white.jpg
+    - assets/images/zembla-white.jpg
+    - assets/images/zembla-brasil.jpg
+    - assets/images/zembla-lime.jpg
+    - assets/images/zembla-yellow.jpg
+    - assets/images/flowerlist/2-2 (1).jpg
+    - assets/images/flowerlist/2-2 (2).jpg
+    - assets/images/flowerlist/2-2 (3).jpg
+    - assets/images/flowerlist/2-2 (4).jpg
+    - assets/images/flowerlist/2-2.jpg
+    - assets/images/flowerlist/1.jpg
+    - assets/images/flowerlist/2.jpg
+    - assets/images/flowerlist/3.jpg
+    - assets/images/flowerlist/4.jpeg
+    - assets/images/flowerlist/5.jpg
+    - assets/images/flowerlist/abbeydrkprpl (1).jpg
+    - assets/images/flowerlist/abbeydrkprpl (2).jpg
+    - assets/images/flowerlist/abbeydrkprpl (3).jpg
+    - assets/images/flowerlist/abbeydrkprpl (4).jpg
+    - assets/images/flowerlist/2-2.jpg
+    - assets/images/flowerlist/abbeyyellow (1).jpg
+    - assets/images/flowerlist/abbeyyellow (2).jpg
+    - assets/images/flowerlist/abbeyyellow (3).jpg
+    - assets/images/flowerlist/abbeyyellow (4).jpg
+    - assets/images/flowerlist/abbeyyellow.jpg
+    - assets/images/flowerlist/alamospurple (1).jpg
+    - assets/images/flowerlist/alamospurple (2).jpg
+    - assets/images/flowerlist/alamospurple (3).jpg
+    - assets/images/flowerlist/alamospurple (4).jpg
+    - assets/images/flowerlist/alamospurple (5).jpg
+    - assets/images/flowerlist/alamosyellow (1).jpg
+    - assets/images/flowerlist/alamosyellow (2).jpg
+    - assets/images/flowerlist/alamosyellow (3).jpg
+    - assets/images/flowerlist/alamosyellow (4).jpg
+    - assets/images/flowerlist/alamosyellow.jpg
+    - assets/images/flowerlist/anastasiasunny (1).jpg
+    - assets/images/flowerlist/anastasiasunny (2).jpg
+    - assets/images/flowerlist/anastasiasunny (3).jpg
+    - assets/images/flowerlist/anastasiasunny (4).jpeg
+    - assets/images/flowerlist/anastasiasunny.jpg
+    - assets/images/flowerlist/anastasiawhite (1).jpg
+    - assets/images/flowerlist/anastasiawhite (2).jpg
+    - assets/images/flowerlist/anastasiawhite (3).jpg
+    - assets/images/flowerlist/anastasiawhite (4).jpg
+    - assets/images/flowerlist/anastasiawhite.jpg
+    - assets/images/flowerlist/dantedrk (1).jpg
+    - assets/images/flowerlist/dantedrk (2).jpg
+    - assets/images/flowerlist/dantedrk (3).jpg
+    - assets/images/flowerlist/dantedrk (4).jpg
+    - assets/images/flowerlist/dantedrk.jpg
+    - assets/images/flowerlist/dantepnk (1).jpg
+    - assets/images/flowerlist/dantepnk (2).jpg
+    - assets/images/flowerlist/dantepnk (3).jpg
+    - assets/images/flowerlist/dantepnk (4).jpg
+    - assets/images/flowerlist/dantepnk.jpg
+    - assets/images/flowerlist/danteprpl (1).jpg
+    - assets/images/flowerlist/danteprpl (2).jpg
+    - assets/images/flowerlist/danteprpl (3).jpg
+    - assets/images/flowerlist/danteprpl (4).jpg
+    - assets/images/flowerlist/danteprpl.jpg
+    - assets/images/flowerlist/dantered (1).jpg
+    - assets/images/flowerlist/dantered (2).jpg
+    - assets/images/flowerlist/dantered (3).jpg
+    - assets/images/flowerlist/dantered (4).jpg
+    - assets/images/flowerlist/dantered.jpg
+    - assets/images/flowerlist/danteyellow (1).jpg
+    - assets/images/flowerlist/danteyellow (2).jpg
+    - assets/images/flowerlist/danteyellow (3).jpg
+    - assets/images/flowerlist/danteyellow (4).jpg
+    - assets/images/flowerlist/danteyellow.jpg
+    - assets/images/flowerlist/deligreen (1).jpg
+    - assets/images/flowerlist/deligreen (2).jpg
+    - assets/images/flowerlist/deligreen (3).jpg
+    - assets/images/flowerlist/deligreen (4).jpg
+    - assets/images/flowerlist/deligreen.jpg
+    - assets/images/flowerlist/fireball (1).jpg
+    - assets/images/flowerlist/fireball (2).jpeg
+    - assets/images/flowerlist/fireball (3).jpg
+    - assets/images/flowerlist/fireball (4).jpeg
+    - assets/images/flowerlist/fireball.jpeg
+    - assets/images/flowerlist/florange (1).jpg
+    - assets/images/flowerlist/florange (2).jpg
+    - assets/images/flowerlist/florange (3).jpg
+    - assets/images/flowerlist/florange (4).jpg
+    - assets/images/flowerlist/florange.jpg
+    - assets/images/flowerlist/magnumyellow (1).jpeg
+    - assets/images/flowerlist/magnumyellow (1).jpg
+    - assets/images/flowerlist/magnumyellow (2).jpg
+    - assets/images/flowerlist/magnumyellow.jpg
+    - assets/images/flowerlist/mdnsun (1).jpg
+    - assets/images/flowerlist/mdnsun (2).jpg
+    - assets/images/flowerlist/mdnsun.jpg
+    - assets/images/flowerlist/mdnsun4 (1).jpg
+    - assets/images/flowerlist/mdnsun4 (2).jpg
+    - assets/images/flowerlist/mulberry (1).jpg
+    - assets/images/flowerlist/mulberry (2).jpg
+    - assets/images/flowerlist/mulberry (3).jpg
+    - assets/images/flowerlist/mulberry (4).jpg
+    - assets/images/flowerlist/mulberry.jpg
+    - assets/images/flowerlist/olive (1).jpg
+    - assets/images/flowerlist/olive (2).jpg
+    - assets/images/flowerlist/olive (3).jpg
+    - assets/images/flowerlist/olive.jpg
+    - assets/images/flowerlist/paladovdark (1).jpg
+    - assets/images/flowerlist/paladovdark (2).jpg
+    - assets/images/flowerlist/paladovdark (3).jpg
+    - assets/images/flowerlist/paladovdark (4).jpg
+    - assets/images/flowerlist/paladovdark.jpg
+    - assets/images/flowerlist/pipsalmon (1).jpg
+    - assets/images/flowerlist/pipsalmon (2).jpg
+    - assets/images/flowerlist/pipsalmon (3).jpg
+    - assets/images/flowerlist/pipsalmon (4).jpg
+    - assets/images/flowerlist/pipsalmon.jpg
+    - assets/images/flowerlist/radost (1).jpg
+    - assets/images/flowerlist/radost (2).jpg
+    - assets/images/flowerlist/radost (3).jpg
+    - assets/images/flowerlist/radost (4).jpg
+    - assets/images/flowerlist/radost.jpg
+    - assets/images/flowerlist/radostyellow (1).jpg
+    - assets/images/flowerlist/radostyellow (2).jpg
+    - assets/images/flowerlist/radostyellow (3).jpg
+    - assets/images/flowerlist/radostyellow (4).jpg
+    - assets/images/flowerlist/radostyellow.jpg
+    - assets/images/flowerlist/rossanocharlotte (1).jpg
+    - assets/images/flowerlist/rossanocharlotte (2).jpg
+    - assets/images/flowerlist/rossanocharlotte (3).jpg
+    - assets/images/flowerlist/rossanocharlotte (5).jpg
+    - assets/images/flowerlist/rossanocharlotte.jpg
+    - assets/images/flowerlist/rossanoelizabeth (1).jpg
+    - assets/images/flowerlist/rossanoelizabeth (2).jpg
+    - assets/images/flowerlist/rossanoelizabeth (3).jpg
+    - assets/images/flowerlist/rossanoelizabeth (4).jpg
+    - assets/images/flowerlist/rossanoelizabeth.jpg
+    - assets/images/flowerlist/rossanowhite (1).jpg
+    - assets/images/flowerlist/rossanowhite (2).jpg
+    - assets/images/flowerlist/rossanowhite (3).jpg
+    - assets/images/flowerlist/rossanowhite (4).jpg
+    - assets/images/flowerlist/rossanowhite.jpg
+    - assets/images/flowerlist/zembla (1).jpg
+    - assets/images/flowerlist/zembla (2).jpg
+    - assets/images/flowerlist/zembla (3).jpg
+    - assets/images/flowerlist/zembla (4).jpg
+    - assets/images/flowerlist/zembla.jpg
+    - assets/images/flowerlist/zemblabrasil (1).jpg
+    - assets/images/flowerlist/zemblabrasil (2).jpg
+    - assets/images/flowerlist/zemblabrasil (3).jpg
+    - assets/images/flowerlist/zemblabrasil (4).jpg
+    - assets/images/flowerlist/zemblabrasil.jpg
+    - assets/images/flowerlist/zemblalime (1).jpg
+    - assets/images/flowerlist/zemblalime (2).jpg
+    - assets/images/flowerlist/zemblalime (3).jpg
+    - assets/images/flowerlist/zemblalime (4).jpg
+    - assets/images/flowerlist/zemblalime.jpg
+    - assets/images/flowerlist/zemblayellow (1).jpg
+    - assets/images/flowerlist/zemblayellow (2).jpg
+    - assets/images/flowerlist/zemblayellow (3).jpg
+    - assets/images/flowerlist/zemblayellow (4).jpg
+    - assets/images/flowerlist/zemblayellow.jpg
+    - assets/images/homepage-bg.png
+    - assets/images/tfff1.png
+    - assets/images/exit-icon.png
+    - assets/images/camera-icon.png
+    - assets/images/catalog-icon.png
+    - assets/images/bookmark-icon.png
+    - assets/images/trivia-icon.png
+    - assets/images/about-icon.png
+    - assets/images/image-picker.png
+    - assets/images/capture-icon.png
+    - assets/images/flash-icon.png
+    - assets/images/bookmark.png
+    - assets/images/back-icon.png
+    - assets/images/rectangle.png
+    - assets/MazzardH-Bold.otf
+    - assets/MazzardH-Medium.otf
+    - assets/MazzardH-ExtraBold.otf
+    - assets/images/Conversation-Bubble.png
+    - assets/images/tt1.png
+    - assets/images/tt3.png
+    - assets/images/tt2.png
+    - assets/images/tt4.png
+
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+fonts:
+  - family: Mazzard-Bold
+    fonts:
+      - asset: MazzardH-Bold.otf
+  - family: Mazzard-Medium
+    fonts:
+      - asset: MazzardH-Medium.otf
+  - family: Mazzard-ExtraBold
+    fonts:
+      - asset: MazzardH-ExtraBold.otf
+
+
+
+      
+      
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
