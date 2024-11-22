@@ -26,9 +26,7 @@ class _CaptureState extends State<Capture> {
   bool _isLoading = true;
   bool _isFlashOn = false;
 
-  static const IconData cameraOutlined = IconData(
-      0xef23, fontFamily: 'MaterialIcons');
-
+  
   @override
   void initState() {
     super.initState();
